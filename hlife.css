@@ -1,0 +1,201 @@
+@media (min-width: 1149px) {
+
+    .challenge_block{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .pink_section{
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color:#EFDCD5;
+    }
+
+    .flex_container{
+        width: 1000px;
+    }
+
+    .drive_image{
+        display:block;
+        width:142px;
+        height:123px;
+    }
+
+    .box_image{
+        display:block;
+        width:160px;
+        height:86px;
+    }
+
+    .athena_image{
+        display:block;
+        width:160px;
+        height:160px;
+    }
+
+    .content_width{
+        width:565.41px;
+    }
+
+    .container{
+        max-width:1257px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:147px;
+        padding-bottom:147px;
+    }
+
+    .fontsize_18{
+        font-size: 18px;
+    }
+
+    .user_survey_block{
+        width: 350px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .persona_width{
+        width:471px;
+    }
+
+    .persona_flex{
+        display: flex;
+        justify-content:space-evenly;
+        padding-top: 60px;
+    }
+
+    .persona_spacer{
+        display: none;
+    }
+
+    .hlife_main_image{
+        width: 750px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .hlife_challenge_image{
+        width: 647px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .persona_image{
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .user_story_desktop {
+        display:block;
+        width: 1441px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .user_flow_image {
+        width:515px;
+    }
+
+    .user_flow_flex{
+        display:flex;
+        align-items: flex-start;
+
+    }
+
+    .for_flex_desktop{
+        display: flex;
+    }
+
+    .logo_image_size{
+        width: 424px;
+    }
+
+    .content_justify{
+        justify-content: space-evenly;
+    }
+
+    .type_image_size{
+        width: 304px;
+    }
+
+    .icon_image_size{
+        width: 368px;
+    }
+
+}
+
+@media (max-width: 1149px) {
+    .empty_div_width{
+        display:none;
+    }
+
+    .width_100_mobile {
+        width: 100%;
+    }
+
+    .pink_section{
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color:#EFDCD5;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .drive_image{
+        display:block;
+        width:47px;
+        height:40px;
+    }
+
+    .box_image{
+        display:block;
+        width:54px;
+        height:29px;
+    }
+
+    .athena_image{
+        display:block;
+        width:48px;
+        height:48px;
+    }
+
+    .user_survey_block{
+        width: 150px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .persona_spacer{
+        height: 30px;
+        background-color: white;
+        margin-right: -25px;
+        margin-left: -25px;
+    }
+
+    .user_story_desktop {
+        display:none;
+    }
+
+    #user_flows div,
+    #user_flows h5,
+    #user_flows h6,
+    #user_flows img{
+        margin-bottom: 30px;
+    }
+
+    #user_story div,
+    #user_story h6,
+    #user_story h5,
+    #user_story img{
+        margin-bottom: 30px;
+    }
+
+}

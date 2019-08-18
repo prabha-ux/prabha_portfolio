@@ -7,16 +7,10 @@
     float: right;
 }
 
-.nav_ul li{
-    float: left;
-    padding-left: 5%;
-    padding-right: 5%;
-}
 
 .footer{
     background-color: #F3F3F3;
     width: 100%;
-    float: left;
     height: 110px;
     justify-content: center;
     align-items: center;
@@ -45,7 +39,19 @@
 .navblock{
     padding-top: 30px;
     padding-bottom: 80px;
-    justify-content:center;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+}
+
+.navblock ul{
+    display: flex;
+}
+
+.navblock li{
+    margin-left: 20px;
 }
 
 .image{
@@ -58,4 +64,9 @@
     background-image: url(images/brand_image.png);
     background-size:cover;
     background-repeat:no-repeat;
+}
+
+.hand_sketch_background{
+    margin-left: 0px;
+    margin-right: 0px;
 }

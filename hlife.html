@@ -2,35 +2,42 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="about.css">
+        <!-- <link rel="stylesheet" type="text/css" href="about.css"> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="hlife.css">
         <link rel="logo icon" type="image/png" href="images/favicon.png"/>
         <title> Prabha Ganapathi | Design Portfolio </title>
+        <!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
+         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-<!-- We created a mother div with 100% width and then put the main logo image and nav -->
-        <div class="navblock" style="width: 100%">
-            <img src="images/personal_logo.png" style="width:181px;height:61px"/>
-            <ul class="nav_ul">
-                <li>PORTFOLIO</li>
-                <li>ABOUT ME</li>
-                <li>RESUME</li>
-                <li>CONTACT</li>
+<!-- Nav Bar -->
+        <div class="navblock">
+            <a href="homemobile.html"><img src="images/personal_logo.png"style="width:181px;height:61px"/></a>
+            <img class="mobile_nav" src="images/mobile_nav.png">
+            <ul>
+                <li><a href="homemobile.html">PORTFOLIO</a></li>
+                <li><a href="aboutmobile.html">ABOUT ME</a></li>
+                <li><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
+                <li><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
             </ul>
         </div>
 <!-- Section 1 - Hero  -->
         <section>
-            <div>
-                <img src="images/hLife_hero.png" style="width:1124px;height:672px"/>
-                <img src="images/button_view_prototype.png" style="width:300px;height:50px"/>
+            <div class="center">
+                <img src="images/hlife_big_image.png" class="width_100_mobile hlife_main_image header-text-spacing-30"/>
             </div>
-            <div>
-                <h1> HLIFE </h1>
-                <h3> There is no exclusive platform where people can store all of their medical records or directly share/accept medical records from their doctors. hLife is a simple, easy to use iOS mobile app, where people can store their medical records. </h3>
+            <div class="center">
+                <a href="https://projects.invisionapp.com/share/6BR65LHJ2CS#/screens" target="_blank"><img class="tool_image header-text-spacing-40" src="images/button_view_prototype.png" style="width: 240px;height: 40px;"/></a>
             </div>
-            <div style="border:0.3px solid;background-color:#979797"></div>
-            <div>
-                <div>
-                    <h4>DELIVERABLE</h4>
+            <div class="header-text-spacing-30 center">
+                <h1 class="header-text-spacing-30"><b>HLIFE</b></h1>
+                <h3 class="hlife_about"> There is no exclusive platform where people can store all of their medical records or directly share/accept medical records from their doctors. hLife is a simple, easy to use iOS mobile app, where people can store their medical records. </h3>
+            </div>
+            <div class="border header-text-spacing-30 center"></div>
+            <div class="deliverable_tool center">
+                <div class="header-text-spacing-30">
+                    <h4 class="header-text-spacing-30"><b>DELIVERABLE</b></h4>
                     <ul>
                         <li>User Research</li>
                         <li>Competitive Analysis</li>
@@ -44,8 +51,9 @@
                         <li>User Testing</li>
                     </ul>
                 </div>
-                <div>
-                    <h4>TOOLS & SOFTWARES</h4>
+                <div class="empty_div_width"></div>
+                <div class="header-text-spacing-30">
+                    <h4 class="header-text-spacing-30"><b>TOOLS & SOFTWARES</b></h4>
                     <ul>
                         <li>Sketch</li>
                         <li>Figma</li>
@@ -58,412 +66,489 @@
             </div>
         </section>
 <!-- Section 2 - The Challenge -->
-        <section>
-            <div>
-                <img src="images/challenge.png" alt="The Challenge" style="width:647px;height:209px"/>
-            </div>
-            <div>
+        <section class="pink_section challenge_container">
+            <div class="challenge_block container">
                 <div>
-                    <h2>THE CHALLENGE</h2>
-                    <h4>Lab reports, medical prescriptions and history are stored at different doctor’s portal, hard copies or buried in our email somewhere. We have to call our previous doctor to get copies of our medical reports emailed to us. This makes it really hard especially when we change our doctors or move to a new location.</h4>
+                    <img src="images/challenge.png" alt="The Challenge" class="width_100_mobile hlife_challenge_image header-text-spacing-30"/>
                 </div>
-                <div>
-                    <h2>THE SOLUTION</h2>
-                    <h4>hLife. A cloud storage platform exclusively to store medical records and track history.</h4>
-                    <h4>hLife makes it really easy for you to store medical records and accept records from your doctor.</h4>
+                <div class="empty_div_width"></div>
+                <div class="for_left">
+                    <div class="header-text-spacing-30">
+                        <h6 class="header-text-spacing-30"><b>THE CHALLENGE</b></h6>
+                        <h4>Lab reports, medical prescriptions and history are stored at different doctor’s portal, hard copies or buried in our email somewhere. We have to call our previous doctor to get copies of our medical reports emailed to us. This makes it really hard especially when we change our doctors or move to a new location.</h4>
+                    </div>
+                    <div class="header-text-spacing-30">
+                        <h6 class="header-text-spacing-30"><b>THE SOLUTION</b></h6>
+                        <h4 class="header-text-spacing-30">hLife. A cloud storage platform exclusively to store medical records and track history.</h4>
+                        <h4 class="header-text-spacing-30">hLife makes it really easy for you to store medical records and accept records from your doctor.</h4>
+                    </div>
                 </div>
             </div>
         </section>
 <!-- Section 3 - Competitive Analysis -->
         <section>
-            <div>
+            <div class="container">
                 <div>
-                    <h6>COMPETITIVE ANALYSIS</h6>
+                    <h3 class="header-text-spacing-30">COMPETITIVE ANALYSIS</h3>
+                    <h6 class="header-text-spacing-30"><b>WHERE ARE OUR OPPORTUNITIES?</b></h6>
+                    <h4 class="content_width header-text-spacing-30">Upon exploring the market I thought that there was a problem in the medical/health area. To analyze further I started off by performing a competitive analysis among the key cloud storage market players. I did a SWOT analysis between Google Drive, Box Inc. and Athena Health.<h4>
+                </div>
+                <div class="competitive_analysis flex_container">
+                    <div>
+                        <img src="images/competitive_analysis/google_drive.png" class="drive_image header-text-spacing-30"/>
+                        <h7 class="fontsize_18">GOOGLE<br>DRIVE</h7>
+                    </div>
+                    <div>
+                        <img src="images/competitive_analysis/box.png" class="box_image header-text-spacing-30"/>
+                        <h7 class="fontsize_18">BOX INC.</h7>
+                    </div>
+                    <div>
+                        <img src="images/competitive_analysis/athena_health.png" class="athena_image header-text-spacing-30"/>
+                        <h7 class="fontsize_18">ATHENA<br>HEALTH</h7>
+                    </div>
                 </div>
                 <div>
-                    <h2>WHERE ARE OUR OPPORTUNITIES?</h2>
-                    <h4>Upon exploring the market I thought that there was a problem in the medical/health area. To analyze further I started off by performing a competitive analysis among the key cloud storage market players. I did a SWOT analysis between Google Drive, Box Inc. and Athena Health.<h4>
+                    <a href="https://docs.google.com/document/d/1Jm1iARh3xU5w0IvGJ-xhyLTUrRa5_ts20bxSogwwx7o/edit?usp=sharing" target="_blank" class="competitive_analysis_flex">
+                        <h4 style="margin-right:5px; margin-top:20px">VIEW COMPETITIVE ANALYSIS</h4>
+                        <img src="images/chevrons_right.png" style="width:12px;height:10px"/>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="images/competitive_analysis/google_drive.png" style="width:142px;height:123px"/>
-                    <h4>GOOGLE DRIVE</h4>
-                </div>
-                <div>
-                    <img src="images/competitive_analysis/box.png" style="width:160px;height:86px"/>
-                    <h4>BOX INC.</h4>
-                </div>
-                <div>
-                    <img src="images/competitive_analysis/athena_health.png" style="width:160px;height:160px"/>
-                    <h4>ATHENA HEALTH</h4>
-                </div>
-            </div>
-            <div>
-                <h4>VIEW COMPETITIVE ANALYSIS >></h4>
             </div>
         </section>
 <!-- Section 4 - User Survey -->
-        <section>
-            <div>
-                <div>
-                    <h6>USER SURVERY</h6>
-                </div>
-                <div>
-                    <h2>TESTING HLIFE</h2>
-                </div>
-                <div>
-                    <h4>I conducted a user survey to gather insights on what problems users are facing in current cloud storage platforms. I also wanted to understand what users think about using a medical cloud storage platform to store their medical records and also how they currently stored/shared their medical records with their doctors. I sent the survey out to discovery forums and friends.</h4>
-                </div>
-                <div>
-                    <h2>MARKET CONFIRMATION</h2>
-                </div>
-                <div>
-                    <h4>From the survey results we were able to confirm that people use antiquated methods to store their medical records such as emails and hard copies. People are looking for a secure platform to store their medical records.</h4>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <img src="images/user_survey/hard_copies.png" style="width:100px;height:100px"/>
-                        <h4>HARD COPIES & EMAILS</h4>
-                        <p>
-                            <span>80%</span>
-                            <span>of the respondents</span>
-                            "store their medical records in emails or as hard copies"
-                        </p>
+        <section class="pink_section">
+            <div class="container">
+                <div class="content_width">
+                    <div class="header-text-spacing-30">
+                        <h3>USER SURVERY</h3>
                     </div>
-                    <div>
-                        <img src="images/user_survey/store_records.png" style="width:100px;height:100px"/>
+                    <div class="header-text-spacing-30">
+                        <h6><b>TESTING HLIFE</b></h6>
+                    </div>
+                    <div class="header-text-spacing-30">
+                        <h4>I conducted a user survey to gather insights on what problems users are facing in current cloud storage platforms. I also wanted to understand what users think about using a medical cloud storage platform to store their medical records and also how they currently stored/shared their medical records with their doctors. I sent the survey out to discovery forums and friends.</h4>
+                    </div>
+                    <div class="header-text-spacing-30">
+                        <h6><b>MARKET CONFIRMATION</b></h6>
+                    </div>
+                    <div class="header-text-spacing-30">
+                        <h4>From the survey results we were able to confirm that people use antiquated methods to store their medical records such as emails and hard copies. People are looking for a secure platform to store their medical records.</h4>
+                    </div>
+                </div>
+                <div class="user_survey">
+                    <div class="user_survey_block center header-text-spacing-20">
+                        <img src="images/user_survey/hard_copies.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <h4 class="header-text-spacing-20">HARD COPIES & EMAILS</h4>
+                        <h2 class="header-text-spacing-10"><b>80%</b></h2>
+                        <p>of the</p>
+                        <p class="header-text-spacing-10">respondents</p>
+                        <p>store their medical</p>
+                        <p>records as hard copies</p>
+                    </div>
+                    <div class="user_survey_block center header-text-spacing-20">
+                        <img src="images/user_survey/store_records.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <h4 class="header-text-spacing-20">STORE RECORDS</h4>
+                        <h2 class="header-text-spacing-10"><b>65%</b></h2>
+                        <p>of the</p>
+                        <p class="header-text-spacing-10">respondents</p>
+                        <p>feel it is important to</p>
+                        <p>store their records</p>
+                        <!-- <img src="images/user_survey/store_records.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
                         <h4>STORE RECORDS</h4>
                         <p>
                             <span>65%</span>
                             <span>of the respondents</span>
                             "feel it is important for them to store their medical records"
-                        </p>
+                        </p> -->
                     </div>
-                    <div>
-                        <img src="images/user_survey/one_platform.png" style="width:100px;height:100px"/>
-                        <h4>ONE PLATFORM</h4>
-                        <p>
-                            <span>80%</span>
-                            <span>of the respondents</span>
-                            "feel it is important to store their records in one platform"
-                        </p>
+                    <div class="user_survey_block center header-text-spacing-20">
+                        <img src="images/user_survey/one_platform.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <h4 class="header-text-spacing-20">ONE PLATFORM</h4>
+                        <h2 class="header-text-spacing-10"><b>80%</b></h2>
+                        <p>of the</p>
+                        <p class="header-text-spacing-10">respondents</p>
+                        <p>feel is it important to</p>
+                        <p>store their records in</p>
+                        <p>one platform</p>
                     </div>
-                    <div>
-                        <img src="images/user_survey/multiple_accounts.png" style="width:100px;height:100px"/>
-                        <h4>MULTIPLE ACCOUNTS</h4>
-                        <p>
-                            <span>47%</span>
-                            <span>of the respondents</span>
-                            "have multiple accounts in different doctors platform to maintain their records"
-                        </p>
+                    <div class="user_survey_block center header-text-spacing-20">
+                        <img src="images/user_survey/multiple_accounts.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <h4 class="header-text-spacing-20">MULTIPLE ACCOUNTS</h4>
+                        <h2 class="header-text-spacing-10"><b>47%</b></h2>
+                        <p>of the</p>
+                        <p class="header-text-spacing-10">respondents</p>
+                        <p>hold multiple</p>
+                        <p>accounts in different</p>
+                        <p>doctors portal</p>
                     </div>
-                    <div>
-                        <img src="images/user_survey/share_records.png" style="width:99px;height:99px"/>
-                        <h4>SHARE RECORDS</h4>
-                        <p>
-                            <span>77%</span>
-                            <span>of the respondents</span>
-                            "want a platform that enables them to be able to share their medical records"
-                        </p>
+                    <div class="user_survey_block center header-text-spacing-20">
+                        <img src="images/user_survey/mobile_app.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <h4 class="header-text-spacing-20">MOBILE APP</h4>
+                        <h2 class="header-text-spacing-10"><b>88%</b></h2>
+                        <p>of the</p>
+                        <p class="header-text-spacing-10">respondents</p>
+                        <p>prefer a mobile app</p>
+                        <p>to store their</p>
+                        <p>medical records</p>
+                    </div>
+                    <div class="user_survey_block center header-text-spacing-20">
+                        <img src="images/user_survey/share_records.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <h4 class="header-text-spacing-20">SHARE RECORDS</h4>
+                        <h2 class="header-text-spacing-10"><b>77%</b></h2>
+                        <p>of the</p>
+                        <p class="header-text-spacing-10">respondents</p>
+                        <p>want a platform that</p>
+                        <p>enables them to share</p>
+                        <p>their records</p>
                     </div>
                 </div>
             </div>
         </section>
 <!-- Section 5 - Persona -->
-        <section>
-            <div>
-                <div>
-                    <h6>PERSONA</h6>
+        <section style="margin-left:0px; margin-right:0px;">
+            <div class="container">
+                <div class="content_width mobile_margin">
+                    <div class="header-text-spacing-30">
+                        <h3>PERSONA</h3>
+                    </div>
+                    <div class="header-text-spacing-30">
+                        <h6><b>WHO WILL USE HLIFE?</b></h6>
+                    </div>
+                    <div class="header-text-spacing-30">
+                        <h4>Keeping in mind the results from our user survey, I created fictional characters to represent what kind of users would use our product. I wanted to remind myself of the needs, behaviours and user goals and these personas help me put myself in the user's shoes and I can make sure the user’s perspectives are taken into consideration.</h4>
+                    </div>
                 </div>
-                <div>
-                    <h2>WHO WILL USE HLIFE?</h2>
-                </div>
-                <div>
-                    <h4>Keeping in mind the results from our user survey, I created fictional characters to represent what kind of users would use our product. I wanted to remind myself of the needs, behaviours and user goals and these personas help me put myself in the user's shoes and I can make sure the user’s perspectives are taken into consideration.</h4>
-                </div>
-            </div>
-            <!-- Persona 1 - Sean Plaice -->
-            <div>
-                <div>
-                    <!-- Section a -->
-                    <img src="images/persona/sean_plaice.png" alt="Sean Plaice Persona" style="width:277px;height:186px">
-                    <h2>SEAN PLAICE</h2>
-                    <h4>“I’m looking for a one stop platform where I can store, view & share my and my family’s medical history”</h4>
-                    <!-- Section - b -->
-                    <ul>
-                        <li>Age: 38</li>
-                        <li>Work: Software Engineer</li>
-                        <li>Family: Married, 2 Kids</li>
-                        <li>Location: Seattle, WA</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                            Outdoor Games, Sports is Life
-                        </li>
-                        <li>
-                            <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                            Stay Positive, Fitness & Health
-                        </li>
-                        <li>
-                            <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                            Techie & Nature Lover
-                        </li>
-                    </ul>
-                    <!-- Section - c -->
-                    <h4>Goals</h4>
-                    <ul>
-                        <li>
-                            <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Maintain his family’s medical record history
-                        </li>
-                        <li>
-                            <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Find a one-stop location to store and view medical records history
-                        </li>
-                        <li>
-                            <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Be able to share medical reports with doctors & family
-                        </li>
-                    </ul>
-                    <h4>Frustrations</h4>
-                    <ul>
-                        <li>
-                            <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Every doctor has a separate portal
-                        </li>
-                        <li>
-                            <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Hardcopies are hard to maintain and keep track of
-                        </li>
-                        <li>
-                            <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Can't remember the medical history of his kids
-                        </li>
-                        <li>
-                            <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Visiting multiple doctors making it hard to share medical reports
-                        </li>
-                    </ul>
-                </div>
-                <!-- Persona 2 - Laura Kotlikof -->
-                <div>
-                    <!-- Section a -->
-                    <img src="images/persona/laura_kotlikoff.png" alt="Sean Plaice Persona" style="width:277px;height:186px">
-                    <h2>LAURA KOTLIKOFF</h2>
-                    <h4>“I want to maintain a seperate heath record file for each family member and want to digitalize everything”</h4>
-                    <!-- Section - b -->
-                    <ul>
-                        <li>Age: 46</li>
-                        <li>Work: Lawyer</li>
-                        <li>Family: Married, 3 Kids</li>
-                        <li>Location: Seattle, WA</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                            Cooking and Baking
-                        </li>
-                        <li>
-                            <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                            Taking care of her kids
-                        </li>
-                        <li>
-                            <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                            Traveling around
-                        </li>
-                    </ul>
-                    <!-- Section - c -->
-                    <h4>Goals</h4>
-                    <ul>
-                        <li>
-                            <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Wants to maintain a separate health record file for each of her family member
-                        </li>
-                        <li>
-                            <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Wants to be able to easily segregate health records into files/folders
-                        </li>
-                        <li>
-                            <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Maintain copies of health records digitally
-                        </li>
-                    </ul>
-                    <h4>Frustrations</h4>
-                    <ul>
-                        <li>
-                            <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Hard copies are hard to maintain and time-consuming
-                        </li>
-                        <li>
-                            <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            All her families medical records are mixed together
-                        </li>
-                        <li>
-                            <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:25px;height21px">
-                            Can't remember the heath histroy for each family member
-                        </li>
-                    </ul>
+                <!-- Persona 1 - Sean Plaice -->
+                <div id="persona" class="pink_section persona_flex">
+                    <div class="persona_width header-text-spacing-30">
+                        <!-- Section a -->
+                        <img id="persona-image" src="images/persona/sean_plaice.png" alt="Sean Plaice Persona" class="width_100_mobile persona_image header-text-spacing-30">
+                        <h2 class="header-text-spacing-10 center">SEAN PLAICE</h2>
+                        <h4 class="header-text-spacing-30 center"><i>I’m looking for a one stop platform where I can store, view & share my and my family’s medical history</i></h4>
+                        <!-- Section - b -->
+                        <div class="persona_block1">
+                            <ul class="header-text-spacing-10">
+                                <li><span>Age:</span> 38</li>
+                                <li><span>Work:</span> Software Engineer</li>
+                                <li><span>Family:</span> Married, 2 Kids</li>
+                                <li><span>Location:</span> Seattle, WA</li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px;">
+                                    <h4>Outdoor Games, Sports is Life</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
+                                    <h4>Stay Positive, Fitness & Health</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
+                                    <h4>Techie & Nature Lover</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Section - c -->
+                        <h4 class="header-text-spacing-10">Goals</h4>
+                        <ul class="header-text-spacing-30">
+                            <li>
+                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Maintain his family’s medical record history</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Find a one-stop location to store and view medical records history</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Be able to share medical reports with doctors & family</h4>
+                            </li>
+                        </ul>
+                        <h4 class="header-text-spacing-10">Frustrations</h4>
+                        <ul class="header-text-spacing-30">
+                            <li>
+                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Every doctor has a separate portal</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Hardcopies are hard to maintain and keep track of</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Can't remember the medical history of his kids</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Visiting multiple doctors making it hard to share medical reports</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="persona_spacer"></div>
+                    <!-- Persona 2 - Laura Kotlikof -->
+                    <div class="persona_width header-text-spacing-30" style="max-width:471px;">
+                        <!-- Section a -->
+                        <img id="persona-image" src="images/persona/laura_kotlikoff.png" alt="Laura Kotlikof Persona" class="width_100_mobile persona_image header-text-spacing-30">
+                        <h2 class="header-text-spacing-10 center">LAURA KOTLIKOFF</h2>
+                        <h4 class="header-text-spacing-30 center"><i>I want to maintain a seperate heath record file for each family member and want to digitalize everything</i></h4>
+                        <!-- Section - b -->
+                        <div class="persona_block1">
+                            <ul class="header-text-spacing-10">
+                                <li><span>Age:</span> 46</li>
+                                <li><span>Work:</span> Lawyer</li>
+                                <li><span>Family:</span> Married, 3 Kids</li>
+                                <li><span>Location:</span> Seattle, WA</li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px;">
+                                    <h4>Cooking and Baking</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
+                                    <h4>Taking care of her kids</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
+                                    <h4>Traveling around</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Section - c -->
+                        <h4 class="header-text-spacing-10">Goals</h4>
+                        <ul class="header-text-spacing-30">
+                            <li>
+                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Wants to maintain a separate health record file for each of her family member</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Wants to be able to easily segregate health records into files/folders</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Maintain copies of health records digitally</h4>
+                            </li>
+                        </ul>
+                        <h4 class="header-text-spacing-10">Frustrations</h4>
+                        <ul class="header-text-spacing-30">
+                            <li>
+                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Hard copies are hard to maintain and time-consuming</h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>All her families medical records are mixed together </h4>
+                            </li>
+                            <li>
+                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
+                                <h4>Can't remember the health histroy for each family member</h4>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 <!-- Section 6 - User Stories -->
-        <section>
-            <div>
-                <h2>USER STORIES</h2>
-                <h4>Based on the user research, I listed out all possible actions that make the MVP a truly user-friendly, time-saving, intuitive, and functional mobile app, I was able to prioritize and eliminate user stories.</h4>
-            </div>
-            <div>
-                <img src="images/user_stories.png" alt="User Stories" style="width:1441px;height:672px">
+        <section id="user_story">
+            <div class="container">
+                <div class="content_width">
+                    <h6><b>USER STORIES</b></h6>
+                    <h4>Based on the user research, I listed out all possible actions that make the MVP a truly user-friendly, time-saving, intuitive, and functional mobile app, I was able to prioritize and eliminate user stories.</h4>
+                </div>
+                <div>
+                    <img class="user_story_desktop" src="images/user_stories.png" alt="User Stories" class="width_100_mobile header-text-spacing-30">
+                    <img class="user_story_mobile" src="images/user_story_mobile.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:333px;height:727px">
+                </div>
             </div>
         </section>
 <!-- Section 7 - User Flows -->
-        <section>
-            <div>
-                <h2>USER FLOWS</h2>
-                <h4> created user flows mapping out all the high-priority user stories and where possible medium-priority user stories making an MVP (minimum viable product).</h4>
-                <h4>SEE FULL DIAGRAM HERE   >></h4>
-            </div>
-            <div>
-                <img src="images/user_flows.png" alt="User Flows" style="width:515px;height:813px">
+        <section id="user_flows" class="pink_section" style="margin-bottom:0px">
+            <div class="container for_flex_desktop">
+                <div class="content_width">
+                    <div class="header-text-spacing-30">
+                        <h6 class="header-text-spacing-30"><b>USER FLOWS</b></h6>
+                        <h4> I created user flows mapping out all the high-priority user stories and where possible medium-priority user stories making an MVP (minimum viable product).</h4>
+                    </div>
+                    <div>
+                        <a style="display:flex; align-items:baseline" class="content_width" href="https://drive.google.com/file/d/1FLZaDrfTImVlznNztiWOo_GPvMs_qvTs/view?usp=sharing" target="_blank">
+                            <h4 style="margin-right:5px">SEE FULL DIAGRAM HERE</h4>
+                            <img src="images/chevrons_right.png" style="width:12px;height:10px"/>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/user_flows.png" alt="User Flows" class="user_flow_image width_100_mobile header-text-spacing-30">
+                </div>
             </div>
         </section>
 <!-- Section 8 - Hand Sketch Wireframes -->
-        <section>
-            <div class="hand_sketch_background"></div>
+        <section class="hand_sketch_background" style="margin-bottom:5px;">
+            <div>
+                <img src="images/hand_sketch_wireframes.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%">
+            </div>
         </section>
 <!-- Section - 9 - Low-Fidelity Wireframes -->
-        <section>
-            <div>
-                <h2>WIREFRAMES</h2>
-                <h4>To get an idea of how I wanted my App to look like, I started off by sketching low fidelity wireframes using paper and pen and moving to the medium-fidelity wireframes using Sketch. Once I completed, I performed user tests to make sure if my app was easily usable, intuitive and if the overall process was streamlined.</h4>
-            </div>
-            <div>
-                <img src="images/low_fidelity_wireframes/1.png" style="width:225px;height:400px">
-                <h4>Sign Up</h4>
-                <img src="images/low_fidelity_wireframes/2.png"style="width:225px;height:400px">
-                <h4>Authentication</h4>
-                <img src="images/low_fidelity_wireframes/3.png"style="width:225px;height:400px">
-                <h4>Timeline</h4>
-                <img src="images/low_fidelity_wireframes/4.png"style="width:225px;height:400px">
-                <h4>Take Photo of Record</h4>
-                <img src="images/low_fidelity_wireframes/5.png"style="width:225px;height:400px">
-                <h4>Add Medical Record Details</h4>
-                <img src="images/low_fidelity_wireframes/6.png"style="width:225px;height:400px">
-                <h4>Photo Gallery</h4>
-                <img src="images/low_fidelity_wireframes/7.png"style="width:225px;height:400px">
-                <h4>Health Profile</h4>
-                <img src="images/low_fidelity_wireframes/8.png"style="width:225px;height:400px">
-                <h4>Health Profile Details</h4>
+        <section id="wireframes">
+            <div class="container">
+                <div class="content_width">
+                    <h6><b>WIREFRAMES</b></h6>
+                    <h4>To get an idea of how I wanted my App to look like, I started off by sketching low fidelity wireframes using paper and pen and moving to the medium-fidelity wireframes using Sketch. Once I completed, I performed user tests to make sure if my app was easily usable, intuitive and if the overall process was streamlined.</h4>
+                </div>
+                <div class="center wireframes_flex">
+                    <div style="flex-basis:22%">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/1.png" style="width:225px;height:400px">
+                        <h4>Sign Up</h4>
+                    </div>
+                    <div style="flex-basis:22%">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/2.png"style="width:225px;height:400px">
+                        <h4>Authentication</h4>
+                    </div>
+                    <div style="flex-basis:22%">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/3.png"style="width:225px;height:400px">
+                        <h4>Timeline</h4>
+                    </div>
+                    <div style="flex-basis:22%">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/4.png"style="width:225px;height:400px">
+                        <h4>Take Photo of Record</h4>
+                    </div>
+                    <div>
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/5.png"style="width:225px;height:400px">
+                        <h4>Add Medical Record Details</h4>
+                    </div>
+                    <div>
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/6.png"style="width:225px;height:400px">
+                        <h4>Photo Gallery</h4>
+                    </div>
+                    <div>
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/7.png"style="width:225px;height:400px">
+                        <h4>Health Profile</h4>
+                    </div>
+                    <div>
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/8.png"style="width:225px;height:400px">
+                        <h4>Health Profile Details</h4>
+                    </div>
+                </div>
             </div>
         </section>
 <!-- Section 10 - Branding Logo -->
-        <section>
-            <div>
-                <h2>BRANDING LOGO</h2>
-                <h4>I wanted the logo to signify three main things 1. to display the feeling of care and protect 2. to show that this is a cloud storage product 3. this platform is for storing and creating medical profile. Thus, I came up with concepts like cloud, heart and stethoscope in the logo.</h4>
-            </div>
-            <div>
-                <img src="images/branding/logo.png" style="width:637px;height:227px">
-                <h5>Logo Iterations</h5>
+        <section id="branding" class="pink_section">
+            <div class="container for_flex_desktop content_justify">
+                <div class="content_width">
+                    <h6><b>BRANDING LOGO</b></h6>
+                    <h4>I wanted the logo to signify three main things 1. to display the feeling of care and protect 2. to show that this is a cloud storage product 3. this platform is for storing and creating medical profile. Thus, I came up with concepts like cloud, heart and stethoscope in the logo.</h4>
+                </div>
+                <div class="center">
+                    <img src="images/branding/logo.png" class="logo_image_size width_100_mobile header-text-spacing-10">
+                    <h4>Logo Iterations</h4>
+                </div>
             </div>
         </section>
 <!-- Section 11 - Color Palette -->
-        <section>
-            <div>
-                <h2>COLOR  PALETTE</h2>
-                <h4>I wanted the App to showcase a bright, positive and protective feeling. So, we choose colors like pink, blue and yellow.</h4>
-            </div>
-            <div>
-                <img src="images/branding/color.png" style="width:435px;height:381px">
-                <h5>Color Palette</h5>
+        <section id="color_palette">
+            <div class="container for_flex_desktop content_justify">
+                <div class="center">
+                    <img src="images/branding/color.png" class="width_100_mobile header-text-spacing-10" style="width:290px;height:254px">
+                    <h4>Color Palette</h4>
+                </div>
+                <div class="content_width">
+                    <h6><b>COLOR  PALETTE</b></h6>
+                    <h4>I wanted the App to showcase a bright, positive and protective feeling. So, we choose colors like pink, blue and yellow.</h4>
+                </div>
             </div>
         </section>
 <!-- Section 12 - Typography -->
-        <section>
-            <div>
-                <h2>TYPOGRAPHY</h2>
-                <h4>I wanted the font to be easy on the eyes and easy to read. Since our platform targets a wide range of users with varying abilities and device specifications, I made sure it’s important to use simple, easily readable fonts.</h4>
-            </div>
-            <div>
-                <img src="images/branding/type.png" style="width:436px;height:562px">
-                <h5>Font List</h5>
+        <section id="typography" class="pink_section">
+            <div class="container for_flex_desktop content_justify">
+                <div class="content_width">
+                    <h6><b>TYPOGRAPHY</b></h6>
+                    <h4>I wanted the font to be easy on the eyes and easy to read. Since our platform targets a wide range of users with varying abilities and device specifications, I made sure it’s important to use simple, easily readable fonts.</h4>
+                </div>
+                <div class="center">
+                    <img src="images/branding/type.png" class="type_image_size width_100_mobile header-text-spacing-10">
+                    <h4>Font List</h4>
+                </div>
             </div>
         </section>
 <!-- Section 13 - Icongraphy -->
-        <section>
-            <div>
-                <h2>ICONGRAPHY</h2>
-                <h4>When appropriate, icons can be use in place of text, which saves up a lot of space. The styling of these icons goes with HLIFE’s friendly brand personality.</h4>
-            </div>
-            <div>
-                <img src="images/branding/icon.png" style="width:553px;height:366px">
-                <h5>Icon Set</h5>
+        <section id="icongraphy">
+            <div class="container for_flex_desktop content_justify">
+                <div class="center">
+                    <img src="images/branding/icon.png" class="icon_image_size width_100_mobile header-text-spacing-10">
+                    <h4>Icon Set</h4>
+                </div>
+                <div class="content_width">
+                    <h6><b>ICONGRAPHY</b></h6>
+                    <h4>When appropriate, icons can be use in place of text, which saves up a lot of space. The styling of these icons goes with HLIFE’s friendly brand personality.</h4>
+                </div>
             </div>
         </section>
 <!-- Section 14 - Hi-Fidelity -->
-        <section>
-            <div>
-                <h2>HI-FIDELITY SCREENS</h2>
-                <h4>This is my most favourite part of the design process. Adding colours to my wireframes makes me really happy and seeing the entire piece coming together drives me to better perfect the outcome.</h4>
-                <h4>Once the hi-fidelity wireframes were completed, I performed a round of usability test to make sure that the entire app is intuitive, easy to use without struggle and provides a joyful experience.</h4>
-            </div>
-            <div>
-                <div>
-                    <h2>SIGN-UP PROCESS</h2>
-                    <img src="images/gif/sign_up.gif" style="width:257px;height:522px">
+        <section id="hi_fi_screens" class="pink_section" style="margin-bottom:0px">
+            <div class="container">
+                <div class="content_width">
+                    <h6><b>HI-FIDELITY SCREENS</b></h6>
+                    <h4>This is my most favourite part of the design process. Adding colours to my wireframes makes me really happy and seeing the entire piece coming together drives me to better perfect the outcome.</h4>
+                    <h4>Once the hi-fidelity wireframes were completed, I performed a round of usability test to make sure that the entire app is intuitive, easy to use without struggle and provides a joyful experience.</h4>
                 </div>
-                <div>
-                    <h2>ADD A MEDICAL RECORD</h2>
-                    <img src="images/gif/add_medical_record.gif" style="width:257px;height:522px">
-                </div>
-                <div>
-                    <h2>ACCEPT MEDICAL RECORDS</h2>
-                    <img src="images/gif/accept_medical_record.gif" style="width:257px;height:522px">
-                </div>
-                <div>
-                    <h2>SHARE MEDICAL RECORDS</h2>
-                    <img src="images/gif/share_medical_record.gif" style="width:257px;height:522px">
-                </div>
-                <div>
-                    <h2>CREATE HEALTH PROFILE</h2>
-                    <img src="images/gif/create_profile.gif" style="width:257px;height:522px">
+                <div class="center wireframes_flex">
+                    <div>
+                        <h4>SIGN-UP PROCESS</h4>
+                        <img src="images/gif/sign_up.gif" style="width:257px;height:522px">
+                    </div>
+                    <div>
+                        <h4>ADD A MEDICAL RECORD</h4>
+                        <img src="images/gif/add_medical_record.gif" style="width:257px;height:522px">
+                    </div>
+                    <div>
+                        <h4>ACCEPT MEDICAL RECORDS</h4>
+                        <img src="images/gif/accept_medical_record.gif" style="width:257px;height:522px">
+                    </div>
+                    <div>
+                        <h4>SHARE MEDICAL RECORDS</h4>
+                        <img src="images/gif/share_medical_record.gif" style="width:257px;height:522px">
+                    </div>
+                    <div>
+                        <h4>CREATE HEALTH PROFILE</h4>
+                        <img src="images/gif/create_profile.gif" style="width:257px;height:522px">
+                    </div>
                 </div>
             </div>
         </section>
 <!-- Section 15 - Final Brand Image -->
-        <section>
-            <div class="final_brand_image"></div>
+        <section class="hand_sketch_background" style="margin-bottom:5px;">
+            <div>
+                <img src="images/footer_image.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%">
+            </div>
         </section>
 <!-- Section 16 - Let's Work Together -->
-        <section>
-            <h2>LET’S WORK TOGETHER!</h2>
-            <h4>PLEASE FEEL FREE TO CONTACT ME ANYTIME</h4>
-            <img src="images/button_contact.png" style="width: 240px;height: 40px;"/>
+        <section class="center header-text-spacing-30">
+            <h6 class="header-text-spacing-20"><b>LET’S WORK TOGETHER!</b></h6>
+            <h4 class="header-text-spacing-20">PLEASE FEEL FREE TO CONTACT ME ANYTIME</h4>
+            <a href="mailto:www.prabha.ux@gmail.com"><img src="images/button_contact.png" style="width: 240px;height: 40px;"/></a>
         </section>
-<!-- Section 17 - Footer -->
-        <section>
-            <div class="footer">
-                <div style="float:left; width:60%">
-                    PRABHA GANAPATHI 2019. ALL RIGHTS RESERVED.
+<!-- Section - Mobile footer -->
+        <section style="margin-left:0px;margin-right:0px;">
+            <div class="mobile_footer_block">
+                <div class="mobile_footer_elements order_3">
+                    <h7>PRABHA GANAPATHI 2019. ALL RIGHTS RESERVED.</h7>
                 </div>
-                <div class="spacer">
+                <div class="mobile_footer_spacer mobile_footer_elements">
                 </div>
-                <div style="float:left; width:20%">
-                    DOWNLOAD RESUME
+                <div class="mobile_footer_elements" style="margin-right: 20px;">
+                    <a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">
+                        <h7>DOWNLOAD RESUME</h7>
+                    </a>
                 </div>
-                <div style="float:left;">
-                    <a class="socialbutton" href="https://www.linkedin.com/in/prabha-ganapathi-0b604136/" target="_blank">
+                <div class="mobile_footer_elements">
+                    <a style="margin-right: 10px;" href="https://www.linkedin.com/in/prabha-ganapathi-0b604136/" target="_blank">
                         <img src="images/linkedin_logo.png" alt="linkedin_logo" style="width:35.3px;height:35.3px;"/>
                     </a>
-                    <a class="socialbutton" href="https://www.facebook.com/harini.rini.96" target="_blank">
-                        <img src="images/instagram_logo.png" alt="instagram_logo" style="width:35.3px;height:35.3px;"/>
+                    <a style="margin-right: 10px;" href="https://www.facebook.com/harini.rini.96" target="_blank">
+                        <img src="images/facebook_logo.png" alt="instagram_logo" style="width:35.3px;height:35.3px;"/>
                     </a>
-                    <a class="socialbutton" href="https://www.instagram.com/rinishennaseattle/" target="_blank">
-                        <img src="images/facebook_logo.png" alt="facebook_logo" style="width:35.3px;height:35.3px;"/>
+                    <a style="margin-right: 10px;" href="https://www.instagram.com/rinishennaseattle/" target="_blank">
+                        <img src="images/instagram_logo.png" alt="facebook_logo" style="width:35.3px;height:35.3px;"/>
                     </a>
                 </div>
             </div>
