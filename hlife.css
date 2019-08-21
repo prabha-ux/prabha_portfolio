@@ -198,4 +198,17 @@
         margin-bottom: 30px;
     }
 
+    .slick-frames {
+s
+    }
+
+}
+
+.parallax-window {
+    min-height: 800px;
+    background: transparent;
+}
+
+.slick-prev:before, .slick-next:before {
+    color:red !important;
 }

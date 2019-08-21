@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="parallax.js"></script>
+        <script src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <!-- <link rel="stylesheet" type="text/css" href="about.css"> -->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,14 +19,22 @@
     </head>
     <body>
 <!-- Nav Bar -->
-        <div class="navblock">
+        <div class="navblock mobile_nav_padding">
             <a href="homemobile.html"><img src="images/personal_logo.png"style="width:181px;height:61px"/></a>
-            <img class="mobile_nav" src="images/mobile_nav.png">
+            <a href="javascript:void(0);" onclick="menu_toggle()"><img class="mobile_nav" src="images/mobile_nav.png"></a>
             <ul>
                 <li><a href="homemobile.html">PORTFOLIO</a></li>
                 <li><a href="aboutmobile.html">ABOUT ME</a></li>
                 <li><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
                 <li><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="mobile_menu_bar" class="menu_toggle_hide">
+            <ul class="mobile_nav_flex" style="width:100%; padding-top:10px; padding-bottom:10px; margin-bottom: 20px;">
+                <li style="font-size:14px;padding-right:5px"><a href="homemobile.html">PORTFOLIO</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="aboutmobile.html">ABOUT ME</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
             </ul>
         </div>
 <!-- Section 1 - Hero  -->
@@ -229,18 +244,18 @@
                         <div class="persona_block1">
                             <ul class="header-text-spacing-10">
                                 <li><span>Age:</span> 38</li>
-                                <li><span>Work:</span> Software Engineer</li>
+                                <li><span>Work:</span> Software Engr</li>
                                 <li><span>Family:</span> Married, 2 Kids</li>
                                 <li><span>Location:</span> Seattle, WA</li>
                             </ul>
                             <ul>
                                 <li>
                                     <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px;">
-                                    <h4>Outdoor Games, Sports is Life</h4>
+                                    <h4>Outdoor Games & Sports</h4>
                                 </li>
                                 <li>
                                     <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                                    <h4>Stay Positive, Fitness & Health</h4>
+                                    <h4>Health & Fitness</h4>
                                 </li>
                                 <li>
                                     <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
@@ -384,8 +399,8 @@
         </section>
 <!-- Section 8 - Hand Sketch Wireframes -->
         <section class="hand_sketch_background" style="margin-bottom:5px;">
-            <div>
-                <img src="images/hand_sketch_wireframes.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="images/hand_sketch_wireframes1.png">
+                <!-- <img src="images/hand_sketch_wireframes.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%"> -->
             </div>
         </section>
 <!-- Section - 9 - Low-Fidelity Wireframes -->
@@ -395,36 +410,36 @@
                     <h6><b>WIREFRAMES</b></h6>
                     <h4>To get an idea of how I wanted my App to look like, I started off by sketching low fidelity wireframes using paper and pen and moving to the medium-fidelity wireframes using Sketch. Once I completed, I performed user tests to make sure if my app was easily usable, intuitive and if the overall process was streamlined.</h4>
                 </div>
-                <div class="center wireframes_flex">
-                    <div style="flex-basis:22%">
+                <div class="center wireframes_flex slick-frames">
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/1.png" style="width:225px;height:400px">
                         <h4>Sign Up</h4>
                     </div>
-                    <div style="flex-basis:22%">
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/2.png"style="width:225px;height:400px">
                         <h4>Authentication</h4>
                     </div>
-                    <div style="flex-basis:22%">
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/3.png"style="width:225px;height:400px">
                         <h4>Timeline</h4>
                     </div>
-                    <div style="flex-basis:22%">
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/4.png"style="width:225px;height:400px">
                         <h4>Take Photo of Record</h4>
                     </div>
-                    <div>
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/5.png"style="width:225px;height:400px">
                         <h4>Add Medical Record Details</h4>
                     </div>
-                    <div>
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/6.png"style="width:225px;height:400px">
                         <h4>Photo Gallery</h4>
                     </div>
-                    <div>
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/7.png"style="width:225px;height:400px">
                         <h4>Health Profile</h4>
                     </div>
-                    <div>
+                    <div style="flex-basis:22%; margin-right: 30px;">
                         <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/8.png"style="width:225px;height:400px">
                         <h4>Health Profile Details</h4>
                     </div>
@@ -517,8 +532,8 @@
         </section>
 <!-- Section 15 - Final Brand Image -->
         <section class="hand_sketch_background" style="margin-bottom:5px;">
-            <div>
-                <img src="images/footer_image.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="images/footer_image.png">
+                <!-- <img src="images/footer_image.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%"> -->
             </div>
         </section>
 <!-- Section 16 - Let's Work Together -->
@@ -552,6 +567,6 @@
                     </a>
                 </div>
             </div>
-        </section>
+    </section>
     </body>
 </html>

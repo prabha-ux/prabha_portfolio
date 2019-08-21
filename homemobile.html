@@ -6,14 +6,15 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="logo icon" type="image/png" href="images/favicon.png"/>
         <title> Prabha Ganapathi | Design Portfolio </title>
+        <script src="index.js"></script>
         <!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
          <meta name="viewport" content="width=device-width">
     </head>
     <body>
         <!-- Nav Bar -->
-        <div class="navblock">
+        <div class="navblock mobile_nav_padding">
             <a href="homemobile.html"><img src="images/personal_logo.png"style="width:181px;height:61px"/></a>
-            <img class="mobile_nav" src="images/mobile_nav.png">
+            <a href="javascript:void(0);" onclick="menu_toggle()"><img class="mobile_nav" src="images/mobile_nav.png"></a>
             <ul>
                 <li><a href="homemobile.html">PORTFOLIO</a></li>
                 <li><a href="aboutmobile.html">ABOUT ME</a></li>
@@ -21,12 +22,24 @@
                 <li><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
             </ul>
         </div>
+        <div id="mobile_menu_bar" class="menu_toggle_hide">
+            <ul class="mobile_nav_flex" style="width:100%; padding-top:10px; padding-bottom:10px; margin-bottom: 20px;">
+                <li style="font-size:14px;padding-right:5px;"><a href="homemobile.html">PORTFOLIO</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="aboutmobile.html">ABOUT ME</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
+            </ul>
+        </div>
 <!-- Section 1 - Hero  -->
-        <section class="hero">
-            <img class="wavehand" src="images/wavehand.png" style="width:70px;height:69px"/>
-            <h2 class="header-text-spacing-30"><b>Hello, my name is Prabha.</b></h2>
-            <h4 class="header-text-spacing-40"> I’m a Seattle based Product Designer.</h4>
-            <h4> I bring together a Business background & Project Management skills to create intuitive, user-centered & delightful experiences.</h4>
+        <section class="margin_top">
+            <div class="hero">
+                <img class="wavehand" src="images/wavehand1.png" style="width:70px;height:69px"/>
+                    <div class="block_padding">
+                        <h2 class="header-text-spacing-30"><b>Hello, my name is Prabha.</b></h2>
+                        <h4 class="header-text-spacing-40"> I’m a Seattle based Product Designer.</h4>
+                        <h4> I bring together a Business background & Project Management skills to create intuitive, user-centered & delightful experiences.</h4>
+                    </div>
+                <div>
         </section>
 <!-- Section 2 - View Full Portfolio -->
         <section>
@@ -96,7 +109,7 @@
         </div> -->
 
 <!-- Section - Mobile footer -->
-        <section style="margin-left:0px;margin-right:0px;">
+        <section style="margin-left:0px;margin-right:0px;margin-bottom:0px;">
             <div class="mobile_footer_block">
                 <div class="mobile_footer_elements order_3">
                     <h7>PRABHA GANAPATHI 2019. ALL RIGHTS RESERVED.</h7>

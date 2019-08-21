@@ -7,18 +7,27 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="logo icon" type="image/png" href="images/favicon.png"/>
         <title> Prabha Ganapathi | Design Portfolio </title>
+        <script src="index.js"></script>
         <!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
     </head>
     <body>
         <!-- We created a mother div with 100% width and then put the main logo image and nav -->
-        <div class="navblock">
+        <div class="navblock mobile_nav_padding">
             <a href="homemobile.html"><img src="images/personal_logo.png"style="width:181px;height:61px"/></a>
-            <img class="mobile_nav" src="images/mobile_nav.png">
+            <a href="javascript:void(0);" onclick="menu_toggle()"><img class="mobile_nav" src="images/mobile_nav.png"></a>
             <ul>
                 <li><a href="homemobile.html">PORTFOLIO</a></li>
                 <li><a href="aboutmobile.html">ABOUT ME</a></li>
-                <li><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf">RESUME</a></li>
+                <li><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
                 <li><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="mobile_menu_bar" class="menu_toggle_hide">
+            <ul class="mobile_nav_flex" style="width:100%; padding-top:10px; padding-bottom:10px; margin-bottom: 20px;">
+                <li style="font-size:14px;padding-right:5px;"><a href="homemobile.html">PORTFOLIO</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="aboutmobile.html">ABOUT ME</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
+                <li style="font-size:14px;padding-right:5px;"><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
             </ul>
         </div>
 <!-- Section 1 - My Photo -->
@@ -54,7 +63,7 @@
             </div>
         </section>
 <!-- Section - Mobile footer -->
-        <section style="margin-left:0px;margin-right:0px;">
+        <section style="margin-left:0px;margin-right:0px;margin-bottom:0px;">
             <div class="mobile_footer_block">
                 <div class="mobile_footer_elements order_3">
                     <h7>PRABHA GANAPATHI 2019. ALL RIGHTS RESERVED.</h7>
@@ -77,4 +86,5 @@
                 </div>
             </div>
         </section>
+    </body>
 </html>
