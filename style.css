@@ -270,6 +270,11 @@ i{
         padding-left: 50px;
         width: 35%;
     }
+
+    .header-spacing-desktop-30{
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (max-width: 1149px) {
@@ -343,6 +348,15 @@ i{
         margin-top: 30px;
     }
 
+    .header-spacing-mobile-30{
+        margin-bottom: 30px;
+    }
+
+    .section_margin{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
 }
 
 .tools_section{
@@ -407,51 +421,15 @@ i{
     margin-right: 0px;
 }
 
-#wireframes div,
-#wireframes h5,
-#wireframes h6{
-    margin-bottom: 30px;
-}
-
-#branding div,
-#branding h5,
-#branding h6{
-    margin-bottom: 30px;
-}
-
-#color_palette div,
-#color_palette h5,
-#color_palette h6{
-    margin-bottom: 30px;
-}
-
-#typography div,
-#typography h5,
-#typography h6{
-    margin-bottom: 30px;
-}
-
-#icongraphy div,
-#icongraphy h5,
-#icongraphy h6{
-    margin-bottom: 30px;
-}
-
-#hi_fi_screens div,
-#hi_fi_screens h5,
-#hi_fi_screens h6{
-    margin-bottom: 30px;
-}
-
 ul li{
     font-size: 18px;
 }
 
-section{
+/* section{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
-}
+} */
 
 .wireframes_flex{
     display: flex;
@@ -471,6 +449,13 @@ a:hover
      text-decoration:none;
      cursor:pointer;
 }
+
+.content_center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 @keyframes wavehand {
     0% {
