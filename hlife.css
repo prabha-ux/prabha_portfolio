@@ -1,4 +1,4 @@
-@media (min-width: 1149px) {
+@media (min-width: 769px) {
 
     .challenge_block{
         display:flex;
@@ -13,7 +13,8 @@
     }
 
     .flex_container{
-        width: 1000px;
+        width: 100%;
+        max-width: 1149px;
     }
 
     .drive_image{
@@ -93,13 +94,15 @@
 
     .user_story_desktop {
         display:block;
-        width: 1441px;
+        width: 100%;
+        max-width: 1149px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .user_flow_image {
-        width:515px;
+        width: 100%;
+        max-width: 515px;
     }
 
     .user_flow_flex{
@@ -136,7 +139,7 @@
 
 }
 
-@media (max-width: 1149px) {
+@media (max-width: 769px) {
     .empty_div_width{
         display:none;
     }
