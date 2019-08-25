@@ -1,0 +1,340 @@
+#prototype_button img{
+    width: 240px;
+    height: 40px;
+}
+
+.margin_bottom_0{
+    margin-bottom:0px;
+}
+
+#hi_fi_wireframe_width img{
+    width:257px;
+    height:522px;
+}
+
+#hi_fi_wireframe_width{
+    padding-top:30px;
+}
+
+.flex_basis_1{
+    flex-basis:22%;
+    margin-right: 30px;
+}
+
+.flex_basis_2{
+    flex-basis:32%; 
+    margin-right:30px;
+}
+
+#width_wireframe img{
+    width:225px;
+    height:400px;
+}
+
+#color_width{
+    width: 290px;
+    height: 254px;
+}
+
+#margin_bottom_5{
+    margin-bottom:5px;
+}
+
+#view_diagram{
+    display:flex;
+    align-items:baseline;
+}
+
+#margin_5{
+    margin-right:5px
+}
+
+#user_story_img{
+    width: 333px;
+    height: 727px;
+}
+
+#image_heart img{
+    width: 30px;
+    height: 30px;
+}
+
+#image_icon img{
+    width: 21px;
+    height: 21px;
+}
+
+
+#margin_0{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#image_width{
+    width:50px;
+    height:50px
+}
+
+#chevron_image{
+    width: 12px;
+    height: 10px;
+}
+
+#view_analysis_margin{
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+#user_flows div,
+#user_flows h5,
+#user_flows h6,
+    margin-bottom: 30px;
+}
+
+#user_story div,
+#user_story h6,
+#user_story h5,
+#user_story img{
+    margin-bottom: 30px;
+}
+
+.slick-frames {
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.parallax-window {
+    min-height: 800px;
+    background: transparent;
+}
+
+.slick-prev:before, .slick-next:before {
+    color:red !important;
+}
+
+.section_spacing{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    max-width: 100%;
+}
+
+.persona_padding {
+    padding-right:20px;
+    padding-top:100px;
+}
+
+@media (min-width: 769px) {
+
+    .challenge_block{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .pink_section{
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color:#EFDCD5;
+    }
+
+    .flex_container{
+        width: 100%;
+        max-width: 1149px;
+    }
+
+    .drive_image{
+        display:block;
+        width:142px;
+        height:123px;
+    }
+
+    .box_image{
+        display:block;
+        width:160px;
+        height:86px;
+    }
+
+    .athena_image{
+        display:block;
+        width:160px;
+        height:160px;
+    }
+
+    .content_width{
+        width:565.41px;
+    }
+
+    .container{
+        max-width:1257px;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding-top:147px;
+        padding-bottom:147px; */
+    }
+
+    .fontsize_18{
+        font-size: 18px;
+    }
+
+    .user_survey_block{
+        width: 350px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .persona_width{
+        max-width:471px;
+    }
+
+    .persona_flex{
+        display: flex;
+        justify-content:space-evenly;
+        padding-top: 60px;
+    }
+
+    .persona_spacer{
+        display: none;
+    }
+
+    .hlife_main_image{
+        width: 750px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .hlife_challenge_image{
+        width: 647px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .persona_image{
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .user_story_desktop {
+        display:block;
+        width: 100%;
+        max-width: 1149px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .user_flow_image {
+        width: 100%;
+        max-width: 515px;
+    }
+
+    .user_flow_flex{
+        display:flex;
+        align-items: flex-start;
+
+    }
+
+    .for_flex_desktop{
+        display: flex;
+    }
+
+    .for_flex_desktop_reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .logo_image_size{
+        width: 424px;
+    }
+
+    .content_justify{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .type_image_size{
+        width: 304px;
+    }
+
+    .icon_image_size{
+        width: 368px;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .empty_div_width{
+        display:none;
+    }
+
+    .width_100_mobile {
+        width: 100%;
+    }
+
+    .pink_section{
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color:#EFDCD5;
+        overflow-x: hidden;
+        /* padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px; */
+    }
+
+    .drive_image{
+        display:block;
+        width:47px;
+        height:40px;
+    }
+
+    .box_image{
+        display:block;
+        width:54px;
+        height:29px;
+    }
+
+    .athena_image{
+        display:block;
+        width:48px;
+        height:48px;
+    }
+
+    .user_survey_block{
+        width: 150px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .persona_spacer{
+        height: 30px;
+        background-color: white;
+        margin-right: -25px;
+        margin-left: -25px;
+    }
+
+    .user_story_desktop {
+        display:none;
+    }
+
+    .persona_mobile_padding {
+        padding-left: 20px;
+    }
+
+    .persona_inner_padding {
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    #persona h4 {
+        font-size: 14px;
+    }
+
+    #persona li {
+        font-size: 14px;
+    }
+}

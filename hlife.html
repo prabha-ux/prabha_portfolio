@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="parallax.js"></script>
-        <script src="index.js"></script>
-        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <!-- <link rel="stylesheet" type="text/css" href="about.css"> -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="hlife.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/hlife.css">
         <link rel="logo icon" type="image/png" href="images/favicon.png"/>
         <title> Prabha Ganapathi | Design Portfolio </title>
         <!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
          <meta name="viewport" content="width=device-width">
+         <!-- Nav Bar -->
+                 <div class="navblock mobile_nav_padding">
+                     <a href="index.html"><img src="images/personal_logo.png" class="personal_logo"/></a>
+                     <a href="javascript:void(0);" onclick="menu_toggle()"><img class="mobile_nav" src="images/mobile_nav.png"></a>
+                     <ul>
+                         <li><a href="index.html">PORTFOLIO</a></li>
+                         <li><a href="about.html">ABOUT ME</a></li>
+                         <li><a href="resume.pdf" target="_blank">RESUME</a></li>
+                         <li><a href="mailto:prabha.ux@gmail.com">CONTACT</a></li>
+                     </ul>
+                 </div>
+                 <div id="mobile_menu_bar" class="menu_toggle_hide">
+                     <ul class="mobile_nav_flex mobile_nav_spacing">
+                         <li class="nav_elements_style"><a href="index.html">PORTFOLIO</a></li>
+                         <li class="nav_elements_style"><a href="about.html">ABOUT ME</a></li>
+                         <li class="nav_elements_style"><a href="resume.pdf" target="_blank">RESUME</a></li>
+                         <li class="nav_elements_style"><a href="mailto:prabha.ux@gmail.com">CONTACT</a></li>
+                     </ul>
+                 </div>
     </head>
     <body>
-<!-- Nav Bar -->
-        <div class="navblock mobile_nav_padding">
-            <a href="homemobile.html"><img src="images/personal_logo.png"style="width:181px;height:61px"/></a>
-            <a href="javascript:void(0);" onclick="menu_toggle()"><img class="mobile_nav" src="images/mobile_nav.png"></a>
-            <ul>
-                <li><a href="homemobile.html">PORTFOLIO</a></li>
-                <li><a href="aboutmobile.html">ABOUT ME</a></li>
-                <li><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
-                <li><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
-            </ul>
-        </div>
-        <div id="mobile_menu_bar" class="menu_toggle_hide">
-            <ul class="mobile_nav_flex" style="width:100%; padding-top:10px; padding-bottom:10px; margin-bottom: 20px;">
-                <li style="font-size:14px;padding-right:5px"><a href="homemobile.html">PORTFOLIO</a></li>
-                <li style="font-size:14px;padding-right:5px;"><a href="aboutmobile.html">ABOUT ME</a></li>
-                <li style="font-size:14px;padding-right:5px;"><a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">RESUME</a></li>
-                <li style="font-size:14px;padding-right:5px;"><a href="mailto:www.prabha.ux@gmail.com">CONTACT</a></li>
-            </ul>
-        </div>
 <!-- Section 1 - Hero  -->
         <section class="section_spacing">
             <div class="center">
                 <img src="images/hlife_big_image.png" class="width_100_mobile hlife_main_image header-text-spacing-30"/>
             </div>
-            <div class="center">
-                <a href="https://projects.invisionapp.com/share/6BR65LHJ2CS#/screens" target="_blank"><img class="tool_image header-text-spacing-40" src="images/button_view_prototype.png" style="width: 240px;height: 40px;"/></a>
+            <div id="prototype_button" class="center">
+                <a href="https://projects.invisionapp.com/share/6BR65LHJ2CS#/screens" target="_blank"><img class="tool_image header-text-spacing-40" src="images/button_view_prototype.png"/></a>
             </div>
             <div class="header-text-spacing-30 center">
                 <h1 class="header-text-spacing-30"><b>HLIFE</b></h1>
@@ -124,8 +119,8 @@
                 </div>
                 <div>
                     <a href="https://docs.google.com/document/d/1Jm1iARh3xU5w0IvGJ-xhyLTUrRa5_ts20bxSogwwx7o/edit?usp=sharing" target="_blank" class="competitive_analysis_flex">
-                        <h4 style="margin-right:5px; margin-top:20px">VIEW COMPETITIVE ANALYSIS</h4>
-                        <img src="images/chevrons_right.png" style="width:12px;height:10px"/>
+                        <h4 id="view_analysis_margin">VIEW COMPETITIVE ANALYSIS</h4>
+                        <img id="chevron_image" src="images/chevrons_right.png"/>
                     </a>
                 </div>
             </div>
@@ -152,7 +147,7 @@
                 </div>
                 <div class="user_survey">
                     <div class="user_survey_block center header-text-spacing-20">
-                        <img src="images/user_survey/hard_copies.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <img id="image_width" src="images/user_survey/hard_copies.png" class="header-text-spacing-10"/>
                         <h4 class="header-text-spacing-20">HARD COPIES & EMAILS</h4>
                         <h2 class="header-text-spacing-10"><b>80%</b></h2>
                         <p>of the</p>
@@ -161,7 +156,7 @@
                         <p>records as hard copies</p>
                     </div>
                     <div class="user_survey_block center header-text-spacing-20">
-                        <img src="images/user_survey/store_records.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <img id="image_width" src="images/user_survey/store_records.png" class="header-text-spacing-10"/>
                         <h4 class="header-text-spacing-20">STORE RECORDS</h4>
                         <h2 class="header-text-spacing-10"><b>65%</b></h2>
                         <p>of the</p>
@@ -177,7 +172,7 @@
                         </p> -->
                     </div>
                     <div class="user_survey_block center header-text-spacing-20">
-                        <img src="images/user_survey/one_platform.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <img id="image_width" src="images/user_survey/one_platform.png" class="header-text-spacing-10"/>
                         <h4 class="header-text-spacing-20">ONE PLATFORM</h4>
                         <h2 class="header-text-spacing-10"><b>80%</b></h2>
                         <p>of the</p>
@@ -187,7 +182,7 @@
                         <p>one platform</p>
                     </div>
                     <div class="user_survey_block center header-text-spacing-20">
-                        <img src="images/user_survey/multiple_accounts.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <img id="image_width" src="images/user_survey/multiple_accounts.png" class="header-text-spacing-10"/>
                         <h4 class="header-text-spacing-20">MULTIPLE ACCOUNTS</h4>
                         <h2 class="header-text-spacing-10"><b>47%</b></h2>
                         <p>of the</p>
@@ -197,7 +192,7 @@
                         <p>doctors portal</p>
                     </div>
                     <div class="user_survey_block center header-text-spacing-20">
-                        <img src="images/user_survey/mobile_app.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <img id="image_width" src="images/user_survey/mobile_app.png" class="header-text-spacing-10"/>
                         <h4 class="header-text-spacing-20">MOBILE APP</h4>
                         <h2 class="header-text-spacing-10"><b>88%</b></h2>
                         <p>of the</p>
@@ -207,7 +202,7 @@
                         <p>medical records</p>
                     </div>
                     <div class="user_survey_block center header-text-spacing-20">
-                        <img src="images/user_survey/share_records.png" class="header-text-spacing-10" style="width=50px;height:50px"/>
+                        <img id="image_width" src="images/user_survey/share_records.png" class="header-text-spacing-10"/>
                         <h4 class="header-text-spacing-20">SHARE RECORDS</h4>
                         <h2 class="header-text-spacing-10"><b>77%</b></h2>
                         <p>of the</p>
@@ -220,9 +215,9 @@
             </div>
         </section>
 <!-- Section 5 - Persona -->
-        <section class="section_spacing" style="margin-left:0px; margin-right:0px;">
+        <section id="margin_0">
             <div class="container">
-                <div class="content_width mobile_margin">
+                <div class="persona_padding persona_mobile_padding">
                     <div class="header-text-spacing-30">
                         <h3>PERSONA</h3>
                     </div>
@@ -238,142 +233,146 @@
                     <div class="persona_width header-text-spacing-30">
                         <!-- Section a -->
                         <img id="persona-image" src="images/persona/sean_plaice.png" alt="Sean Plaice Persona" class="width_100_mobile persona_image header-text-spacing-30">
-                        <h2 class="header-text-spacing-10 center">SEAN PLAICE</h2>
-                        <h4 class="header-text-spacing-30 center"><i>I’m looking for a one stop platform where I can store, view & share my and my family’s medical history</i></h4>
-                        <!-- Section - b -->
-                        <div class="persona_block1">
-                            <ul class="header-text-spacing-10">
-                                <li><span>Age:</span> 38</li>
-                                <li><span>Work:</span> Software Engr</li>
-                                <li><span>Family:</span> Married, 2 Kids</li>
-                                <li><span>Location:</span> Seattle, WA</li>
+                        <div class="persona_inner_padding">
+                            <h2 class="header-text-spacing-10 center">SEAN PLAICE</h2>
+                            <h4 class="header-text-spacing-30 center"><i>I’m looking for a one stop platform where I can store, view & share my and my family’s medical history</i></h4>
+                            <!-- Section - b -->
+                            <div class="persona_block1">
+                                <ul class="header-text-spacing-10">
+                                    <li><span>Age:</span> 38</li>
+                                    <li><span>Work:</span> Software Engr</li>
+                                    <li><span>Family:</span> Married, 2 Kids</li>
+                                    <li><span>Location:</span> Seattle, WA</li>
+                                </ul>
+                                <ul id="image_heart">
+                                    <li>
+                                        <img src="images/persona/heart_outline.png" alt="Heart Outline Icon">
+                                        <h4>Outdoor Games & Sports</h4>
+                                    </li>
+                                    <li>
+                                        <img src="images/persona/heart_outline.png" alt="Heart Outline Icon">
+                                        <h4>Health & Fitness</h4>
+                                    </li>
+                                    <li>
+                                        <img src="images/persona/heart_outline.png" alt="Heart Outline Icon">
+                                        <h4>Techie & Nature Lover</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Section - c -->
+                            <h4 class="header-text-spacing-10">Goals</h4>
+                            <ul id="image_icon" class="header-text-spacing-30">
+                                <li>
+                                    <img src="images/persona/goals_icon.png" alt="Goals Icon">
+                                    <h4>Maintain his family’s medical record history</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/goals_icon.png" alt="Goals Icon">
+                                    <h4>Find a one-stop location to store and view medical records history</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/goals_icon.png" alt="Goals Icon">
+                                    <h4>Be able to share medical reports with doctors & family</h4>
+                                </li>
                             </ul>
-                            <ul>
+                            <h4 class="header-text-spacing-10">Frustrations</h4>
+                            <ul id="image_icon" class="header-text-spacing-30">
                                 <li>
-                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px;">
-                                    <h4>Outdoor Games & Sports</h4>
+                                    <img src="images/persona/frustrations_icon.png" alt="Goals Icon">
+                                    <h4>Every doctor has a separate portal</h4>
                                 </li>
                                 <li>
-                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                                    <h4>Health & Fitness</h4>
+                                    <img src="images/persona/frustrations_icon.png" alt="Goals Icon">
+                                    <h4>Hardcopies are hard to maintain and keep track of</h4>
                                 </li>
                                 <li>
-                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                                    <h4>Techie & Nature Lover</h4>
+                                    <img src="images/persona/frustrations_icon.png" alt="Goals Icon">
+                                    <h4>Can't remember the medical history of his kids</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/frustrations_icon.png" alt="Goals Icon">
+                                    <h4>Visiting multiple doctors making it hard to share medical reports</h4>
                                 </li>
                             </ul>
                         </div>
-                        <!-- Section - c -->
-                        <h4 class="header-text-spacing-10">Goals</h4>
-                        <ul class="header-text-spacing-30">
-                            <li>
-                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Maintain his family’s medical record history</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Find a one-stop location to store and view medical records history</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Be able to share medical reports with doctors & family</h4>
-                            </li>
-                        </ul>
-                        <h4 class="header-text-spacing-10">Frustrations</h4>
-                        <ul class="header-text-spacing-30">
-                            <li>
-                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Every doctor has a separate portal</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Hardcopies are hard to maintain and keep track of</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Can't remember the medical history of his kids</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Visiting multiple doctors making it hard to share medical reports</h4>
-                            </li>
-                        </ul>
                     </div>
                     <div class="persona_spacer"></div>
                     <!-- Persona 2 - Laura Kotlikof -->
-                    <div class="persona_width header-text-spacing-30" style="max-width:471px;">
+                    <div class="persona_width header-text-spacing-30">
                         <!-- Section a -->
                         <img id="persona-image" src="images/persona/laura_kotlikoff.png" alt="Laura Kotlikof Persona" class="width_100_mobile persona_image header-text-spacing-30">
-                        <h2 class="header-text-spacing-10 center">LAURA KOTLIKOFF</h2>
-                        <h4 class="header-text-spacing-30 center"><i>I want to maintain a seperate heath record file for each family member and want to digitalize everything</i></h4>
-                        <!-- Section - b -->
-                        <div class="persona_block1">
-                            <ul class="header-text-spacing-10">
-                                <li><span>Age:</span> 46</li>
-                                <li><span>Work:</span> Lawyer</li>
-                                <li><span>Family:</span> Married, 3 Kids</li>
-                                <li><span>Location:</span> Seattle, WA</li>
+                        <div class="persona_inner_padding">
+                            <h2 class="header-text-spacing-10 center">LAURA KOTLIKOFF</h2>
+                            <h4 class="header-text-spacing-30 center"><i>I want to maintain a seperate heath record file for each family member and want to digitalize everything</i></h4>
+                            <!-- Section - b -->
+                            <div class="persona_block1">
+                                <ul class="header-text-spacing-10">
+                                    <li><span>Age:</span> 46</li>
+                                    <li><span>Work:</span> Lawyer</li>
+                                    <li><span>Family:</span> Married, 3 Kids</li>
+                                    <li><span>Location:</span> Seattle, WA</li>
+                                </ul>
+                                <ul id="image_heart">
+                                    <li>
+                                        <img src="images/persona/heart_outline.png" alt="Heart Outline Icon">
+                                        <h4>Cooking and Baking</h4>
+                                    </li>
+                                    <li>
+                                        <img src="images/persona/heart_outline.png" alt="Heart Outline Icon">
+                                        <h4>Taking care of her kids</h4>
+                                    </li>
+                                    <li>
+                                        <img src="images/persona/heart_outline.png" alt="Heart Outline Icon">
+                                        <h4>Traveling around</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Section - c -->
+                            <h4 class="header-text-spacing-10">Goals</h4>
+                            <ul id="image_icon" class="header-text-spacing-30">
+                                <li>
+                                    <img src="images/persona/goals_icon.png" alt="Goals Icon">
+                                    <h4>Wants to maintain a separate health record file for each of her family member</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/goals_icon.png" alt="Goals Icon">
+                                    <h4>Wants to be able to easily segregate health records into files/folders</h4>
+                                </li>
+                                <li>
+                                    <img src="images/persona/goals_icon.png" alt="Goals Icon">
+                                    <h4>Maintain copies of health records digitally</h4>
+                                </li>
                             </ul>
-                            <ul>
+                            <h4 class="header-text-spacing-10">Frustrations</h4>
+                            <ul id="image_icon" class="header-text-spacing-30">
                                 <li>
-                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px;">
-                                    <h4>Cooking and Baking</h4>
+                                    <img src="images/persona/frustrations_icon.png" alt="Goals Icon">
+                                    <h4>Hard copies are hard to maintain and time-consuming</h4>
                                 </li>
                                 <li>
-                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                                    <h4>Taking care of her kids</h4>
+                                    <img src="images/persona/frustrations_icon.png" alt="Goals Icon">
+                                    <h4>All her families medical records are mixed together </h4>
                                 </li>
                                 <li>
-                                    <img src="images/persona/heart_outline.png" alt="Heart Outline Icon" style="width:30px;height:30px">
-                                    <h4>Traveling around</h4>
+                                    <img src="images/persona/frustrations_icon.png" alt="Goals Icon">
+                                    <h4>Can't remember the health histroy for each family member</h4>
                                 </li>
                             </ul>
                         </div>
-                        <!-- Section - c -->
-                        <h4 class="header-text-spacing-10">Goals</h4>
-                        <ul class="header-text-spacing-30">
-                            <li>
-                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Wants to maintain a separate health record file for each of her family member</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Wants to be able to easily segregate health records into files/folders</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/goals_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Maintain copies of health records digitally</h4>
-                            </li>
-                        </ul>
-                        <h4 class="header-text-spacing-10">Frustrations</h4>
-                        <ul class="header-text-spacing-30">
-                            <li>
-                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Hard copies are hard to maintain and time-consuming</h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>All her families medical records are mixed together </h4>
-                            </li>
-                            <li>
-                                <img src="images/persona/frustrations_icon.png" alt="Goals Icon" style="width:21px;height:21px;">
-                                <h4>Can't remember the health histroy for each family member</h4>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 <!-- Section 6 - User Stories -->
-        <section id="user_story">
+        <section id="user_story" class="section_spacing">
             <div class="container">
-                <div class="content_width">
+                <div class="content_width header-spacing-mobile-30">
                     <h6><b>USER STORIES</b></h6>
                     <h4>Based on the user research, I listed out all possible actions that make the MVP a truly user-friendly, time-saving, intuitive, and functional mobile app, I was able to prioritize and eliminate user stories.</h4>
                 </div>
                 <div>
                     <img class="user_story_desktop" src="images/user_stories.png" alt="User Stories" class="width_100_mobile header-text-spacing-30">
-                    <img class="user_story_mobile" src="images/user_story_mobile.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:333px;height:727px">
+                    <img id="user_story_img" class="user_story_mobile" src="images/user_story_mobile.png" alt="User Flows" class="width_100_mobile header-text-spacing-30">
                 </div>
             </div>
         </section>
@@ -386,8 +385,8 @@
                         <h4> I created user flows mapping out all the high-priority user stories and where possible medium-priority user stories making an MVP (minimum viable product).</h4>
                     </div>
                     <div class="header-spacing-mobile-30">
-                        <a style="display:flex; align-items:baseline" class="content_width" href="https://drive.google.com/file/d/1FLZaDrfTImVlznNztiWOo_GPvMs_qvTs/view?usp=sharing" target="_blank">
-                            <h4 style="margin-right:5px">SEE FULL DIAGRAM HERE</h4>
+                        <a id="view_diagram" class="content_width" href="https://drive.google.com/file/d/1FLZaDrfTImVlznNztiWOo_GPvMs_qvTs/view?usp=sharing" target="_blank">
+                            <h4 id="margin_5">SEE FULL DIAGRAM HERE</h4>
                             <img src="images/chevrons_right.png" style="width:12px;height:10px"/>
                         </a>
                     </div>
@@ -398,7 +397,7 @@
             </div>
         </section>
 <!-- Section 8 - Hand Sketch Wireframes -->
-        <section class="hand_sketch_background" style="margin-bottom:5px;">
+        <section id="margin_bottom_5" class="hand_sketch_background">
             <div class="parallax-window" data-parallax="scroll" data-image-src="images/hand_sketch_wireframes1.png">
                 <!-- <img src="images/hand_sketch_wireframes.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%"> -->
             </div>
@@ -410,37 +409,37 @@
                     <h6 class="header-text-spacing-30"><b>WIREFRAMES</b></h6>
                     <h4 class="header-text-spacing-30">To get an idea of how I wanted my App to look like, I started off by sketching low fidelity wireframes using paper and pen and moving to the medium-fidelity wireframes using Sketch. Once I completed, I performed user tests to make sure if my app was easily usable, intuitive and if the overall process was streamlined.</h4>
                 </div>
-                <div class="center wireframes_flex slick-frames">
-                    <div class="header-spacing-desktop-30" style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/1.png" style="width:225px;height:400px">
+                <div id="width_wireframe" class="center wireframes_flex slick-frames">
+                    <div class="flex_basis_1 header-spacing-desktop-30">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/1.png">
                         <h4>Sign Up</h4>
                     </div>
-                    <div style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/2.png"style="width:225px;height:400px">
+                    <div class="flex_basis_1">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/2.png">
                         <h4>Authentication</h4>
                     </div>
-                    <div style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/3.png"style="width:225px;height:400px">
+                    <div class="flex_basis_1">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/3.png">
                         <h4>Timeline</h4>
                     </div>
-                    <div style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/4.png"style="width:225px;height:400px">
+                    <div class="flex_basis_1">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/4.png">
                         <h4>Take Photo of Record</h4>
                     </div>
-                    <div style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/5.png"style="width:225px;height:400px">
+                    <div class="flex_basis_1">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/5.png">
                         <h4>Add Medical Record Details</h4>
                     </div>
-                    <div style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/6.png"style="width:225px;height:400px">
+                    <div class="flex_basis_1">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/6.png">
                         <h4>Photo Gallery</h4>
                     </div>
-                    <div style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/7.png"style="width:225px;height:400px">
+                    <div class="flex_basis_1">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/7.png">
                         <h4>Health Profile</h4>
                     </div>
-                    <div style="flex-basis:22%; margin-right: 30px;">
-                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/8.png"style="width:225px;height:400px">
+                    <div class="flex_basis_1">
+                        <img class="header-text-spacing-10" src="images/low_fidelity_wireframes/8.png">
                         <h4>Health Profile Details</h4>
                     </div>
                 </div>
@@ -467,7 +466,7 @@
                     <h4 class="header-spacing-mobile-30">I wanted the App to showcase a bright, positive and protective feeling. So, we choose colors like pink, blue and yellow.</h4>
                 </div>
                 <div class="center">
-                    <img src="images/branding/color.png" class="width_100_mobile header-text-spacing-10" style="width:290px;height:254px">
+                    <img id="color_width" src="images/branding/color.png" class="width_100_mobile header-text-spacing-10">
                     <h4>Color Palette</h4>
                 </div>
             </div>
@@ -499,79 +498,96 @@
             </div>
         </section>
 <!-- Section 14 - Hi-Fidelity -->
-        <section class="section_spacing pink_section" style="margin-bottom:0px">
+        <section id="margin_bottom_0" class="section_spacing pink_section">
             <div class="container">
                 <div class="content_width content_center">
                     <h6 class="header-text-spacing-30"><b>HI-FIDELITY SCREENS</b></h6>
                     <h4 class="header-text-spacing-30">This is my most favourite part of the design process. Adding colours to my wireframes makes me really happy and seeing the entire piece coming together drives me to better perfect the outcome.</h4>
                     <h4 class="header-text-spacing-30">Once the hi-fidelity wireframes were completed, I performed a round of usability test to make sure that the entire app is intuitive, easy to use without struggle and provides a joyful experience.</h4>
                 </div>
-                <div class="center wireframes_flex" style="padding-top:30px;">
-                    <div style="flex-basis:32%; margin-right:30px;">
+                <div id="hi_fi_wireframe_width"class="center wireframes_flex">
+                    <div class="flex_basis_2">
                         <h4 class="header-text-spacing-10">SIGN-UP</h4>
                         <h4>PROCESS</h4>
-                        <img src="images/gif/sign_up.gif" style="width:257px;height:522px">
+                        <img src="images/gif/sign_up.gif">
                     </div>
-                    <div style="flex-basis:32%; margin-right:30px;">
+                    <div class="flex_basis_2">
                         <h4 class="header-text-spacing-10">ADD A MEDICAL</h4>
                         <h4>RECORD</h4>
-                        <img src="images/gif/add_medical_record.gif" style="width:257px;height:522px">
+                        <img src="images/gif/add_medical_record.gif">
                     </div>
                     <div style="flex-basis:23%; margin-right:30px;">
                         <h4 class="header-text-spacing-10">ACCEPT MEDICAL</h4>
                         <h4>RECORDS</h4>
-                        <img src="images/gif/accept_medical_record.gif" style="width:257px;height:522px">
+                        <img src="images/gif/accept_medical_record.gif">
                     </div>
-                    <div style="flex-basis:32%; margin-right:30px;">
+                    <div class="flex_basis_2">
                         <h4 class="header-text-spacing-10">SHARE MEDICAL</h4>
                         <h4>RECORDS</h4>
-                        <img src="images/gif/share_medical_record.gif" style="width:257px;height:522px">
+                        <img src="images/gif/share_medical_record.gif">
                     </div>
-                    <div style="flex-basis:32%; margin-right:30px;">
+                    <div class="flex_basis_2">
                         <h4 class="header-text-spacing-10">CREATE HEALTH</h4>
                         <h4>PROFILE</h4>
-                        <img src="images/gif/create_profile.gif" style="width:257px;height:522px">
+                        <img src="images/gif/create_profile.gif">
                     </div>
                 </div>
             </div>
         </section>
 <!-- Section 15 - Final Brand Image -->
-        <section class="hand_sketch_background" style="margin-bottom:5px;">
+        <section id="margin_bottom_5" class="hand_sketch_background">
             <div class="header-text-spacing-30 parallax-window" data-parallax="scroll" data-image-src="images/footer_image.png">
                 <!-- <img src="images/footer_image.png" alt="User Flows" class="width_100_mobile header-text-spacing-30" style="width:100%"> -->
             </div>
         </section>
 <!-- Section 16 - Let's Work Together -->
-        <section class="center header-text-spacing-30">
+        <section id="contact_button" class="center header-text-spacing-30">
             <h6 class="header-text-spacing-20"><b>LET’S WORK TOGETHER!</b></h6>
             <h4 class="header-text-spacing-20">PLEASE FEEL FREE TO CONTACT ME ANYTIME</h4>
-            <a href="mailto:www.prabha.ux@gmail.com"><img src="images/button_contact.png" style="width: 240px;height: 40px;"/></a>
+            <a href="mailto:prabha.ux@gmail.com"><img src="images/button_contact.png"/></a>
         </section>
 <!-- Section - Mobile footer -->
-        <section style="margin-left:0px;margin-right:0px;">
+        <section id="footer_style">
             <div class="mobile_footer_block">
                 <div class="mobile_footer_elements order_3">
                     <h7>PRABHA GANAPATHI 2019. ALL RIGHTS RESERVED.</h7>
                 </div>
                 <div class="mobile_footer_spacer mobile_footer_elements">
                 </div>
-                <div class="mobile_footer_elements" style="margin-right: 20px;">
-                    <a href="file:///Users/harinirini/Downloads/Resume%20-%20Prabha%20Ganapathi%20(2).pdf" target="_blank">
+                <div id="margin_right_20" class="mobile_footer_elements">
+                    <a href="resume.pdf" target="_blank">
                         <h7>DOWNLOAD RESUME</h7>
                     </a>
                 </div>
                 <div class="mobile_footer_elements">
-                    <a style="margin-right: 10px;" href="https://www.linkedin.com/in/prabha-ganapathi-0b604136/" target="_blank">
-                        <img src="images/linkedin_logo.png" alt="linkedin_logo" style="width:35.3px;height:35.3px;"/>
+                    <a id="margin_right_10" href="https://www.linkedin.com/in/prabha-ganapathi-0b604136/" target="_blank">
+                        <img src="images/linkedin_logo.png" alt="linkedin_logo"/>
                     </a>
-                    <a style="margin-right: 10px;" href="https://www.facebook.com/harini.rini.96" target="_blank">
-                        <img src="images/facebook_logo.png" alt="instagram_logo" style="width:35.3px;height:35.3px;"/>
+                    <a id="margin_right_10" href="https://www.facebook.com/harini.rini.96" target="_blank">
+                        <img src="images/facebook_logo.png" alt="instagram_logo"/>
                     </a>
-                    <a style="margin-right: 10px;" href="https://www.instagram.com/rinishennaseattle/" target="_blank">
-                        <img src="images/instagram_logo.png" alt="facebook_logo" style="width:35.3px;height:35.3px;"/>
+                    <a id="margin_right_10" href="https://www.instagram.com/rinishennaseattle/" target="_blank">
+                        <img src="images/instagram_logo.png" alt="facebook_logo"/>
                     </a>
                 </div>
             </div>
-    </section>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="parallax.js"></script>
+        <script src="index.js"></script>
+        <script>
+            // $(document).ready(function(){
+            //     if($( document ).width() < 400) {
+            //         $('.slick-frames').slick({
+            //             centerMode: true,
+            //             variableWidth: true,
+            //             infinite: true,
+            //             slidesToShow: 2
+            //         });
+            //     }
+            // });
+        </script>
     </body>
 </html>
