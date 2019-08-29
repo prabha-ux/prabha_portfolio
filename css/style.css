@@ -26,11 +26,17 @@
     src: local('Avenir Next LT Pro Italic'), url('../fonts/AvenirNextLTPro-It.woff') format('woff');
 }
 
+body {
+    color: black;
+    font-family: 'Avenir Next LT Pro Regular';
+    line-height: 1.3;
+}
+
 .navblock{
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     justify-content:space-between;
     display: flex;
     align-items: center;
@@ -44,10 +50,19 @@
     margin-left: 20px;
 }
 
-body {
-    color: black;
-    font-family: 'Avenir Next LT Pro Regular';
-    line-height: 1.3;
+.fixed_nav {
+    position: fixed;
+    top: 0;
+    background-color: #FFF;
+    width: calc(100% - 60px);
+    padding-bottom: 10px;
+}
+
+.fixed_menu {
+    position: fixed;
+    top: 96px;
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 /* Homepage - Section 1 - Wavehand */
@@ -208,24 +223,6 @@ i{
     justify-content: center;
     align-items: center;
     display: flex;
-}
-
-.navblock{
-    padding-top: 30px;
-    padding-bottom: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content:space-between;
-    display: flex;
-    align-items: center;
-}
-
-.navblock ul{
-    display: flex;
-}
-
-.navblock li{
-    margin-left: 20px;
 }
 
 .image{
@@ -512,7 +509,7 @@ a:hover
 
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
 
     .width_100_mobile {
         width: 100%;

@@ -1,3 +1,17 @@
+/* Style the navbar */
+/* #navbar {
+  overflow: hidden;
+  background-color: #FFFFFF;
+} */
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 95%;
+} */
+
+
 #prototype_button img{
     width: 240px;
     height: 40px;
@@ -22,7 +36,7 @@
 }
 
 .flex_basis_2{
-    flex-basis:32%; 
+    flex-basis:32%;
     margin-right:30px;
 }
 
@@ -266,7 +280,7 @@
 
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .empty_div_width{
         display:none;
     }

@@ -12,28 +12,28 @@
         <!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
          <meta name="viewport" content="width=device-width">
          <!-- Nav Bar -->
-                 <div class="navblock mobile_nav_padding">
-                     <a href="index.html"><img src="images/personal_logo.png" class="personal_logo"/></a>
-                     <a href="javascript:void(0);" onclick="menu_toggle()"><img class="mobile_nav" src="images/mobile_nav.png"></a>
-                     <ul>
-                         <li><a href="index.html">PORTFOLIO</a></li>
-                         <li><a href="about.html">ABOUT ME</a></li>
-                         <li><a href="resume.pdf" target="_blank">RESUME</a></li>
-                         <li><a href="mailto:prabha.ux@gmail.com">CONTACT</a></li>
-                     </ul>
-                 </div>
-                 <div id="mobile_menu_bar" class="menu_toggle_hide">
-                     <ul class="mobile_nav_flex mobile_nav_spacing">
-                         <li class="nav_elements_style"><a href="index.html">PORTFOLIO</a></li>
-                         <li class="nav_elements_style"><a href="about.html">ABOUT ME</a></li>
-                         <li class="nav_elements_style"><a href="resume.pdf" target="_blank">RESUME</a></li>
-                         <li class="nav_elements_style"><a href="mailto:prabha.ux@gmail.com">CONTACT</a></li>
-                     </ul>
-                 </div>
     </head>
     <body>
+        <div class="navblock fixed_nav mobile_nav_padding">
+            <a href="index.html"><img src="images/personal_logo.png" class="personal_logo"/></a>
+            <a href="javascript:void(0);" onclick="menu_toggle('fixed_menu')"><img class="mobile_nav" src="images/mobile_nav.png"></a>
+            <ul>
+                <li><a href="index.html">PORTFOLIO</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="resume.pdf" target="_blank">RESUME</a></li>
+                <li><a href="mailto:prabha.ux@gmail.com">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="mobile_menu_bar" class="menu_toggle_hide">
+            <ul class="mobile_nav_flex mobile_nav_spacing">
+                <li class="nav_elements_style"><a href="index.html">PORTFOLIO</a></li>
+                <li class="nav_elements_style"><a href="about.html">ABOUT ME</a></li>
+                <li class="nav_elements_style"><a href="resume.pdf" target="_blank">RESUME</a></li>
+                <li class="nav_elements_style"><a href="mailto:prabha.ux@gmail.com">CONTACT</a></li>
+            </ul>
+        </div>
 <!-- Section 1 - Hero  -->
-        <section class="section_spacing">
+        <section class="section_spacing" style="padding-top:150px;">
             <div class="center">
                 <img src="images/hlife_big_image.png" class="width_100_mobile hlife_main_image header-text-spacing-30"/>
             </div>
@@ -577,6 +577,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="parallax.js"></script>
         <script src="index.js"></script>
+        <script src="navbar.js"></script>
         <script>
             // $(document).ready(function(){
             //     if($( document ).width() < 400) {
