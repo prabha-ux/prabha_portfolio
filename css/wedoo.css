@@ -134,6 +134,7 @@ button {
     text-transform: uppercase;
     height: 43px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .container{
